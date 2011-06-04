@@ -1,4 +1,4 @@
-package com.solova.aspirin.store.queue;
+package org.masukomi.aspirin.store.queue;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
