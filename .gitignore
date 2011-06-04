@@ -1,0 +1,10 @@
+bin
+build
+*.class
+*.swp
+*~
+target
+.classpath
+.project
+.settings/*
+
