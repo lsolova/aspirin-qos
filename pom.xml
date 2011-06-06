@@ -30,6 +30,8 @@
     	<groupId>org.masukomi</groupId>
     	<artifactId>aspirin</artifactId>
     	<version>0.10.00</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
     </dependency>
   </dependencies>
 </project>
