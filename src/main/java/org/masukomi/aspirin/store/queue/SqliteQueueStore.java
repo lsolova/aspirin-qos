@@ -150,6 +150,7 @@ public class SqliteQueueStore implements QueueStore {
 	public void init() {
 		try {
 			executeSimpleQuery("UPDATE queueinfos SET dstate="+DeliveryState.QUEUED.getStateId()+" WHERE dstate="+DeliveryState.IN_PROGRESS.getStateId());
+			AspirinInternal.getLogger().info("SQLite QueueStore initialized.");
 		} catch (SQLException e) {
 			AspirinInternal.getLogger().error("SQLite QueueStore initialization failed.",e);
 		}
