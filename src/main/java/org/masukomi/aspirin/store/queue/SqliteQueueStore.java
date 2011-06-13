@@ -100,6 +100,8 @@ public class SqliteQueueStore implements QueueStore {
 				while( rS.next() )
 					usedMailIds.add(rS.getString("mailid"));
 			}
+			rS.close();
+			executeSimpleQuery("VACUUM");
 		} catch (SQLException e) {
 			AspirinInternal.getLogger().error("Store cleaning failed.",e);
 		}
