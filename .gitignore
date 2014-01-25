@@ -1,10 +1,13 @@
 bin
 build
 *.class
+*.eml
+*.iml
 *.swp
 *~
 target
 .classpath
+.idea
 .project
 .settings/*
 
